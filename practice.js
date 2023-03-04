@@ -13,7 +13,11 @@
 //   }
 // }
 // console.log(likes(["Max", "John", "Mark"]));
-
+//
+//
+//
+//
+//
 //5kata https://www.codewars.com/kata/52bc74d4ac05d0945d00054e/train/javascript
 // function firstNonRepeatingLetter(s) {
 //   if (s === "") return;
