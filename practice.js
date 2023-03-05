@@ -32,3 +32,20 @@
 //   }
 // }
 // console.log(firstNonRepeatingLetter("sTreSS"));
+//
+//
+//
+//
+//
+//8kata https://www.codewars.com/kata/58d248c7012397a81800005c/train/javascript
+//
+// var cubeChecker = function (volume, side) {
+//   if (volume <= 0 || side <= 0) {
+//     return false;
+//   } else if (volume === Math.pow(side, 3)) {
+//     return true;
+//   } else if (volume <= 0) {
+//     return false;
+//   } else return false;
+// };
+// console.log(cubeChecker(-8, -2));
