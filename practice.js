@@ -49,3 +49,30 @@
 //   } else return false;
 // };
 // console.log(cubeChecker(-8, -2));
+//
+//
+//
+//
+//
+//5kata https://www.codewars.com/kata/54d81488b981293527000c8f/train/javascript
+
+function sumPairs(ints, s) {
+  let result = [];
+  for (let i = 0; i <= ints.length; i++) {
+    if (result.length > 0) {
+      break;
+    }
+    for (let j = 0; j <= ints.length; j++) {
+      let newOne = 0;
+      newOne = ints[i] + ints[j];
+
+      if (newOne === s) {
+        result.push(ints[i], ints[j]);
+        break;
+      }
+    }
+  }
+  return result.length ? result : undefiend;
+}
+
+console.log(sumPairs([10, 5, 2, 3, 7, 5], 10));
