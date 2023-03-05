@@ -13,7 +13,11 @@
 //   }
 // }
 // console.log(likes(["Max", "John", "Mark"]));
-
+//
+//
+//
+//
+//
 //5kata https://www.codewars.com/kata/52bc74d4ac05d0945d00054e/train/javascript
 // function firstNonRepeatingLetter(s) {
 //   if (s === "") return;
@@ -28,3 +32,47 @@
 //   }
 // }
 // console.log(firstNonRepeatingLetter("sTreSS"));
+//
+//
+//
+//
+//
+//8kata https://www.codewars.com/kata/58d248c7012397a81800005c/train/javascript
+//
+// var cubeChecker = function (volume, side) {
+//   if (volume <= 0 || side <= 0) {
+//     return false;
+//   } else if (volume === Math.pow(side, 3)) {
+//     return true;
+//   } else if (volume <= 0) {
+//     return false;
+//   } else return false;
+// };
+// console.log(cubeChecker(-8, -2));
+//
+//
+//
+//
+//
+//5kata https://www.codewars.com/kata/54d81488b981293527000c8f/train/javascript
+
+function sumPairs(ints, s) {
+  let result = [];
+  for (let i = 0; i <= ints.length; i++) {
+    if (result.length > 0) {
+      break;
+    }
+    for (let j = 0; j <= ints.length; j++) {
+      let newOne = 0;
+      newOne = ints[i] + ints[j];
+
+      if (newOne === s) {
+        result.push(ints[i], ints[j]);
+        break;
+      }
+    }
+  }
+  return result.length ? result : undefiend;
+}
+
+console.log(sumPairs([10, 5, 2, 3, 7, 5], 10));
