@@ -54,25 +54,40 @@
 //
 //
 //
-//5kata https://www.codewars.com/kata/54d81488b981293527000c8f/train/javascript
+//
+//7 kyu https://www.codewars.com/kata/which-color-is-the-brightest
+// function brightest(colors) {
+//   let thebrightestintheworld = 0;
+//   let thecolor = "";
+//   let match = 0;
+//   for (let i = 0; i <= colors.length - 1; i++) {
+//     let newArray = colors.map((e) => e.toUpperCase());
 
-function sumPairs(ints, s) {
-  let result = [];
-  for (let i = 0; i <= ints.length; i++) {
-    if (result.length > 0) {
-      break;
-    }
-    for (let j = 0; j <= ints.length; j++) {
-      let newOne = 0;
-      newOne = ints[i] + ints[j];
+//     let r = newArray[i].slice(1, 3);
+//     let g = newArray[i].slice(3, 5);
+//     let b = newArray[i].slice(5, 7);
 
-      if (newOne === s) {
-        result.push(ints[i], ints[j]);
-        break;
-      }
-    }
-  }
-  return result.length ? result : undefiend;
-}
-
-console.log(sumPairs([10, 5, 2, 3, 7, 5], 10));
+//     let brigh = Math.max(parseInt(r, 16), parseInt(g, 16), parseInt(b, 16));
+//     debugger;
+//     if (brigh === thebrightestintheworld) {
+//       if (match === 1) {
+//         thebrightestintheworld = brigh;
+//         thecolor = colors[i];
+//         return;
+//       }
+//       match++;
+//     } else if (brigh > thebrightestintheworld) {
+//       thebrightestintheworld = brigh;
+//       thecolor = colors[i];
+//     }
+//   }
+//   return thecolor;
+// }
+//
+// console.log(brightest([`#00FF00`, `#FFFF00`]));
+//
+//
+//
+//
+//
+// 7kata https://www.codewars.com/kata/disemvowel-trolls
