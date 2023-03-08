@@ -91,3 +91,9 @@
 //
 //
 // 7kata https://www.codewars.com/kata/disemvowel-trolls
+function disemvowel(str) {
+  let vom = ["q", "e", "y", "u", "i", "o", "a"];
+  return str.split("").filter((j) => j === vom);
+}
+
+console.log(disemvowel("This website is for losers LOL!"));
